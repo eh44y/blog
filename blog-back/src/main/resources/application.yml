@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: blog-back
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC&characterEncoding=UTF-8
+    username: "user"
+    password: "0000"
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 110MB
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+jwt:
+  secret: YzJsc2RtVnlibWx1WlMxMFpXTm9MWE53Y21sdVp5MWliMjkwTFdwM2RDMTBkWFJ2Y21saGJDMXpaV055WlhRdGMybHNkbVZ5Ym1sdVpTMTBaV05vTFhOd2NtbHVaeTFpYjI5MExXcDNkQzEwZFhSdmNtbGhiQzF6WldOeVpYUUs=
+
+server:
+  port: 4000
+
+file:
+  path: /Users/diaz/java/Temp/blog/file/
+  url: http://127.0.0.1:4000/file/

@@ -1,0 +1,42 @@
+/* POST - api/signup */
+
+{
+  "email": "eh@naver.com",
+  "password": "0000",
+  "nickname": "diaz",
+  "telNumber": "01012341234",
+  "profileImage": null
+}
+
+{
+  "email": "eh@naver.com",
+  "password": "00000000",
+  "nickname": "diaz",
+  "telNumber": "01012341234",
+  "agreedPersonal": true
+}
+
+/* POST - api/login */
+
+{
+    "email": "eh@naver.com",
+    "password": "00000000"
+}
+
+/* GET - user/me */
+
+Authorization Bearer 토큰
+
+http://127.0.0.1:4000/file/2f8196a7-264b-4ece-b2a6-563042fa34d5.jpg
+http://127.0.0.1:4000/file/58ebd2a5-e1b2-45d4-a829-4381e053b2d8.jpeg
+
+/* POST - api/board */
+
+{
+    "title": "제목입니다.",
+    "content": "내용입니다.",
+    "boardImageList": [
+        "http://127.0.0.1:4000/file/2f8196a7-264b-4ece-b2a6-563042fa34d5.jpg",
+        "http://127.0.0.1:4000/file/58ebd2a5-e1b2-45d4-a829-4381e053b2d8.jpeg"
+    ]
+}
