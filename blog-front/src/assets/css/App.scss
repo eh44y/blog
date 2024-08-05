@@ -1,0 +1,255 @@
+@import "mixin/MixIn";
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+} // divider
+
+.emphasis {
+  font-weight: bolder;
+} // .emphasis
+
+.word-badge {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 6px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+  } // &:hover
+} // .word-badge
+
+.black-button {
+  /* @include disabled-drag; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 30px;
+  border-radius: 46px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } // .black-button:hover
+} // .black-button
+
+.black-large-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  border-radius: 46px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } // .black-large-button:hover
+} // .black-large-button
+
+.white-button {
+  /* @include disabled-drag; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 46px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  } // .white-button:hover
+} // .white-button
+
+.disable-button {
+  /* @include disabled-drag; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 30px;
+  border-radius: 46px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: not-allowed;
+} // .disable-button
+
+.icon-box-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+
+    &.expand-left-light-icon {
+      background-image: url(assets/img/expand-left-light.png);
+    } // &.expand-left-light-icon
+    &.expand-left-icon {
+      background-image: url(assets/img/expand-left.png);
+    } // &.expand-left-icon
+    &.expand-right-light-icon {
+      background-image: url(assets/img/expand-right-light.png);
+    } // &.expend-right-light-icon
+    &.expand-right-icon {
+      background-image: url(assets/img/expand-right.png);
+    } // &.expend-right-icon
+  } // .icon
+} // .icon-box-small
+
+.icon-box-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+
+    &.image-box-white-icon {
+      background-image: url(assets/img/image-box-white-light.png);
+    } // &.image-box-white-icon
+  } // .icon
+} // .icon-box-large
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+
+    &.arrow-right-icon {
+      background-image: url(assets/img/arrow-right.png);
+    } // &.arrow-right-icon
+  } // .icon
+
+  .logo-light-icon {
+    background-image: url(assets/img/logo-light.png);
+  } // .logo-light-icon
+  .logo-dark-icon {
+    background-image: url(assets/img/logo-dark.png);
+  } // .logo-dark-icon
+} // .icon-box
+
+.icon-button,
+.auth-check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50% 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  } // .icon-button:hover
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+
+    &.eye-light-off-icon {
+      background-image: url(assets/img/eye-light-off.png);
+    } // &.eye-light-off-icon
+    &.eye-light-on-icon {
+      background-image: url(assets/img/eye-light-on.png);
+    } // &.eye-light-on-icon
+    &.expand-right-light-icon {
+      background-image: url(assets/img/expand-right-light.png);
+    } // &.expend-right-light-icon
+    &.check-round-fill-icon {
+      background-image: url(assets/img/check-round-fill.png);
+    } // &.check-round-fill-icon
+    &.check-ring-light-icon {
+      background-image: url(assets/img/check-ring-light.png);
+    } // &.check-ring-light-icon
+    &.image-box-light-icon {
+      background-image: url(assets/img/image-box-light.png);
+    } // &.image-box-light-icon
+    &.close-icon {
+      background-image: url(assets/img/close.png);
+    } // &.close-icon
+    &.more-icon {
+      background-image: url(assets/img/more.png);
+    } // &.more-icon
+    &.favorite-fill-icon {
+      background-image: url(assets/img/favorite-fill.png);
+    } // &.favorite-fill-icon
+    &.favorite-light-icon {
+      background-image: url(assets/img/favorite-light.png);
+    } // &.favorite-light-icon
+    &.up-light-icon {
+      background-image: url(assets/img/expand-up-light.png);
+    } // &.up-light-icon
+    &.down-light-icon {
+      background-image: url(assets/img/expand-down-light.png);
+    } // &.down-light-icon
+    &.comment-icon {
+      background-image: url(assets/img/chat-light.png);
+    } // &.comment-icon
+    &.edit-icon {
+      background-image: url(assets/img/edit-light.png);
+    } // &.edit-icon
+  } // .icon
+
+  .insta-icon {
+    background-image: url(assets/img/insta.png);
+  } // .insta-icon
+  .git-icon {
+    background-image: url(assets/img/git.png);
+  } // .git-icon
+  .search-button-icon {
+    background-image: url(assets/img/search-light.png);
+  } // .search-button-icon
+} // .icon-button

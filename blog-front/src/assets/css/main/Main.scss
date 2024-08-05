@@ -1,0 +1,114 @@
+#main-top-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 40px;
+
+  .main-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    gap: 56px;
+
+    .main-top-intro {
+      color: rgba(0, 0, 0, 1);
+      font-family: "NanumBarunpen";
+      text-align: center;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.8px;
+      white-space: pre-wrap;
+    } // .main-top-intro
+
+    .main-top-contents-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+
+      .main-top-contents-title {
+        color: rgba(0, 0, 0, 1);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+      } // .main-top-contents-title
+
+      .main-top-contents {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+      } // .main-top-contents
+    } // .main-top-contents-area
+  } // .main-top-container
+} // #main-top-wrapper
+
+#main-bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .main-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+
+    .main-bottom-title {
+      color: rgba(0, 0, 0, 1);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 140%;
+    } // .main-bottom-title
+
+    .main-bottom-contents-area {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      gap: 24px;
+      width: 100%;
+
+      .main-bottom-current-contents {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      } // .main-bottom-current-contents
+
+      .main-bottom-popular-area {
+        grid-column: 2 / 3;
+
+        .main-bottom-popular-card {
+          padding: 24px;
+          background-color: rgba(255, 255, 255, 1);
+
+          .main-bottom-popular-card-area {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .main-bottom-popular-card-title {
+              color: rgba(0, 0, 0, 1);
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 140%;
+            } // .main-bottom-popular-card-title
+
+            .main-bottom-popular-card-contents {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 12px;
+            } // .main-bottom-popular-card-contents
+          } // .main-bottom-popular-carad-area
+        } // .main-bottom-popular-card
+      } // .main-bottom-popular-area
+    } // .main-bottom-contents-area
+
+    .main-bottom-pagination-area {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    } // .main-bottom-pagination-area
+  } // .main-bottom-container
+} //#main-bottom-wrapper

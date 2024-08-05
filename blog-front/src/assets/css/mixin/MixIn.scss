@@ -1,0 +1,6 @@
+@mixin disabled-drag {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-use-select: all;
+  user-select: all;
+} // disabled-drag
